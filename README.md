@@ -9,7 +9,7 @@ You can use the local files to build a Docker image using the `requirements.txt`
 ```
 pipenv lock -r > requirements.txt
 docker build -t my-fast-api .
-docker run -v "$(pwd):/app" -p "8000:8000" my-fast-api
+docker run -v "$(pwd)/api:/app" -p "8000:8000" my-fast-api
 ```
 
 ### Prerequisites
